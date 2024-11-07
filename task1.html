@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task_1/style.css">
+    <style>/* Make header fixed at the top */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed; /* Fixed positioning */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width */
+            z-index: 1000; /* Ensure it stays on top of other content */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for visual separation */
+        }
+        
+        body {
+            margin: 0; /* Remove default body margin */
+            padding-top: 60px; /* Offset for fixed header height */
+        }
+        
+        .header-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .header-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .header-nav a:hover {
+            color: #ffdd57;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="task2.html">Task 2: Calculator</a>
+            <a href="task3.html">Task 3: Image Gallery</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="regestraion">
+            <form action="submit" class="form">
+                <label for="">Name</label><input type="text"  class="name" placeholder="name" id="name">
+                <label for="">Email</label><input type="email" class="email" id="email" placeholder="email">
+                <label for="">Password</label><input type="password" class="password" id="password" placeholder="password">
+                <button class="btn" id ="btn">Отпарвить</button>
+            </form>
+        </div>
+    </section>
+    <script src="task_1/index.js"></script>
+</body>
+</html>

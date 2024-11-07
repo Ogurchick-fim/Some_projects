@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="task_2/style.css">
+    <style>
+
+        /* Make header fixed at the top */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for visual separation */
+}
+
+body {
+    margin: 0; /* Remove default body margin */
+    padding-top: 60px; /* Offset for fixed header height */
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #ffdd57;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="task1.html">Task 1: Registration Form</a>
+            <a href="task3.html">Task 3: Image Gallery</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <section class="calculator">
+        <input type="number" id="number1" placeholder="Enter first number">
+        
+        <input type="number" id="number2" placeholder="Enter second number">
+        
+        <label for="operation">Operation</label>
+        <select id="operation">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (×)</option>
+            <option value="divide">Division (÷)</option>
+        </select>
+        
+        <button id="calculateBtn">Calculate</button>
+        
+        <p id="result" class="result"></p>
+        <p id="error" class="error-message"></p>
+    </section>
+    <script src="task_2/script.js"></script>
+</body>
+</html>
